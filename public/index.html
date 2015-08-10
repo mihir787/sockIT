@@ -1,6 +1,7 @@
 <!doctype html>
 <html>
   <head>
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
     <title>Ask the Audience</title>
   </head>
   <body>
@@ -13,24 +14,29 @@
 
     <br><br>
 
-    <div id="baseball-votes">Baseball: 0</div>
-    <div id="basketball-votes">Basketball: 0</div>
-    <div id="football-votes">Football: 0</div>
-    <div id="hockey-votes">Hockey: 0</div>
+    <div id="baseball-votes">Baseball => 0</div>
+    <div id="basketball-votes">Basketball => 0</div>
+    <div id="football-votes">Football => 0</div>
+    <div id="hockey-votes">Hockey => 0</div>
 
     <br><br>
 
     <div id="choices">
-      <button>Baseball</button>
+      <a class="waves-effect waves-light btn">Baseball</a>
+      <a class="waves-effect waves-light btn">Basketball</a>
+      <a class="waves-effect waves-light btn">Football</a>
+      <a class="waves-effect waves-light btn">Hockey</a>
+      <!-- <button>Baseball</button>
       <button>Basketball</button>
       <button>Football</button>
-      <button>Hockey</button>
+      <button>Hockey</button> -->
     </div>
 
     <br><br>
 
     <div id="last-vote"></div>
-
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
     <script src="/socket.io/socket.io.js"></script>
     <script src="/client.js"></script>
 
