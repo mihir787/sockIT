@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/eric-dowty/class-web-socket-example.git"
+    "url": "https://github.com/mihir787/sockIT"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/eric-dowty/class-web-socket-example/issues"
+    "url": "https://github.com/mihir787/sockIT/issues"
   },
-  "homepage": "https://github.com/eric-dowty/class-web-socket-example#readme",
+  "homepage": "https://github.com/mihir787/sockIT#readme",
   "dependencies": {
     "express": "^4.13.3",
     "lodash": "^3.10.1",
