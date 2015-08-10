@@ -33,17 +33,17 @@ for(var i = 0; i < buttons.length; i++){
 
 
 //gets the HTML element vote-tally
-var aVotes = document.getElementById('a-votes');
-var bVotes = document.getElementById('b-votes');
-var cVotes = document.getElementById('c-votes');
-var dVotes = document.getElementById('d-votes');
+var aVotes = document.getElementById('baseball-votes');
+var bVotes = document.getElementById('basketball-votes');
+var cVotes = document.getElementById('football-votes');
+var dVotes = document.getElementById('hockey-votes');
 
 //sets up listener for the voteTally emission from server
 socket.on('voteTally', function(tally){
-  aVotes.innerText = "A: "+tally.A;
-  bVotes.innerText = "B: "+tally.B;
-  cVotes.innerText = "C: "+tally.C;
-  dVotes.innerText = "D: "+tally.D;
+  aVotes.innerText = "Baseball: "+tally.Baseball;
+  bVotes.innerText = "Basketball: "+tally.Basketball;
+  cVotes.innerText = "Football: "+tally.Football;
+  dVotes.innerText = "Hockey: "+tally.Hockey;
 });
 
 

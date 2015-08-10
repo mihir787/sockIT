@@ -42,10 +42,10 @@ function usersVoteTally(voteCount){
 //vote counter function
 function countVotes(votes) {
   var voteCount = {
-    A: 0,
-    B: 0,
-    C: 0,
-    D: 0
+    Baseball: 0,
+    Basketball: 0,
+    Football: 0,
+    Hockey: 0
   };
   for (vote in votes) {
     voteCount[votes[vote]]++
@@ -79,7 +79,7 @@ io.on('connection', function(socket){
       console.log(countVotes(votes));
       socket.emit('lastVote', message);
     }
-    //console.log(channel, message);  
+    //console.log(channel, message);
   });
 
   //setup event listener for disconnections to the server
@@ -96,6 +96,3 @@ io.on('connection', function(socket){
 
 //export the server so we can use it later
 module.exports = server;
-
-
-
