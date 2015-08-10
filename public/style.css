@@ -1,3 +1,21 @@
 body {
     background-image: url("http://www.download-hd-wallpapers.com/wp-content/uploads/2014/06/sports-backgrounds.jpg");
 }
+
+h1 {
+  text-align: center;
+}
+
+div {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    margin: auto;
+}
